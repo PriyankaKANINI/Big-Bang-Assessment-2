@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e8f0;
+} 
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-md-6 {
+  max-width: 400px;
+}
+
+.card {
+  /* Existing CSS properties */
+
+  display: flex; /* Add flex display */
+  flex-direction: row; /* Set the flex direction to row */
+}
+
+.card-body {
+  flex-grow: 1; /* Make the card body grow to fill available space */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 3; /* Set a higher z-index */
+  position: relative;
+  height: 100%; /* Make the card fill the available height */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff; /* Add color to the card title */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.login-input-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  color: #1f2937;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #6b7280;
+}
+
+.form-control:focus {
+  background-color: #edf2f7;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker hover color */
+}
+
+.btn-primary:active {
+  background-color: #003266; /* Darker active color */
+  transition: all 0.3s ease;
+}
+
+.login-frgt-pass,
+.login-sign-up {
+  margin: 1em;
+  padding: 2px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: #0056b3; /* Darker hover color */
+  text-decoration: underline;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.social-icons i {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  margin: 24px 8px 48px 8px;
+  background-color: gray;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons i.fa-facebook-f {
+  background-color: #3b5998;
+}
+
+.social-icons i.fa-twitter {
+  background-color: #1da1f2;
+}
+
+.social-icons i.fa-google {
+  background-color: #dd4b39;
+}
+
+.social-icons i:hover {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login-image-container {
+  text-align: center; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add some space between the image and the form */
+  animation: floating 3s ease-in-out infinite;
+}
+
+.login-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 100px; /* Adjust the value to move the component slightly down */
+    padding-right: 40px;
+  }
+
+  .col-md-6 {
+    max-width: 100%; /* Make the column fill the available width */
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .col-md-6 {
+    max-width: 100%;
+  }
+}

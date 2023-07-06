@@ -1,0 +1,114 @@
+.delete-doc-container {
+  text-align: center;
+  margin-top: 150px; /* Adjust the top margin based on your needs */
+  max-width: 100%; /* Add a maximum width to make it responsive */
+  padding: 0 20px; /* Add horizontal padding to create space at the sides */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  padding-bottom: 5%;
+}
+.main-delete-container{
+  overflow-x: auto; /* Enable horizontal scroll */
+}
+.delete-doc-head {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#delete-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#delete-button:hover {
+  background-color: #45a049;
+}
+
+.delete-message {
+  margin-top: 20px;
+  color: #555;
+  font-style: italic;
+}
+
+#remain-doc {
+  padding-top: 40px;
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.doctors-table-delete {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; 
+}
+
+.doctors-table-delete th,
+.doctors-table-delete td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  overflow-x: auto; 
+}
+
+.doctors-table-delete th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.doctors-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.doctors-table tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #delete-input {
+    width: 100%;
+  }
+
+  .delete-doc-head {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #delete-button {
+    width: 100%;
+  }
+
+  #remain-doc {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .doctors-table th,
+  .doctors-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .doctors-delete-table {
+    width: 100%; /* Set the width to 100% to fit the screen */
+    margin-bottom: 20px; /* Add margin-bottom to create space below the table */
+  }
+}

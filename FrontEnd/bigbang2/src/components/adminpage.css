@@ -1,0 +1,117 @@
+.viewdel {
+  padding-top: 195px;
+}
+
+.viewdelete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: calc(100vh - 120px); /* Adjust the height based on your needs */
+  overflow-y: auto;
+}
+
+.hello {
+  margin: 1em;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  background-image: linear-gradient(45deg, #007bff, #ffffff);
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hello:hover {
+  background-image: linear-gradient(45deg, #ffffff, #007bff);
+}
+
+.viewdelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.viewdelete h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hello {
+  animation: slideIn 0.5s ease-out;
+}
+
+
+
+.admin-container {
+  position: relative;
+}
+
+
+.approve-sidebar {
+  width: 200px;
+  background-color: #333;
+  padding: 10px;
+  margin-top: 95px; 
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+
+.approve-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.approve-sidebar button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {  
+  .approve-sidebar {
+    width: 100%;
+    margin-top: 52px;
+    position: static;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .approve-sidebar {
+    padding: 5px;
+  }
+
+  .approve-sidebar button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+

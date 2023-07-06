@@ -1,0 +1,122 @@
+.approve-container {
+  display: flex;
+  margin-top: 220px;
+}
+
+.approve-content {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 40vh; /* Set the height to 100% of the viewport height */
+  flex-grow: 1;
+  z-index: 0;
+}
+.approve-content button{
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 2px;
+  justify-content: center;
+  border-radius: 3px;
+  width: 80px;
+}
+
+#ap-doc{
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.approve-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Add horizontal scrollbar when needed */
+}
+
+.approve-table th,
+.approve-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.approve-table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.approve-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.approve-table tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+#approve-button-small {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#approve-button-small:hover {
+  background-color: #45a049;
+}
+
+#approve-app {
+  margin-bottom: 10%;
+  color: #007bff;
+}
+
+#approve-ino {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+  /* Adjust the styles for screens smaller than 992px */
+  .approve-container {
+    flex-direction: column;
+  }
+  /* .approve-sidebar {
+    width: 100%;
+    margin-top: 0;
+    position: static;
+    height: auto;
+  } */
+
+  .approve-content {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust the styles for screens smaller than 576px */
+  /* .approve-sidebar {
+    padding: 5px;
+  } */
+
+  /* .approve-sidebar button {
+    padding: 6px 12px;
+    font-size: 14px;
+  } */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .approve-container {
+    margin-top: 10px;
+    padding-top: 110px;
+  }
+}

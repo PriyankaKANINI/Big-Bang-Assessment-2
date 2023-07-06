@@ -1,0 +1,135 @@
+.ashy {
+  padding-top: 20px;
+  min-height: calc(100vh - 60px);
+  overflow-y: auto;
+  position: relative; 
+}
+
+.register-container-doctor {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  /* background-color: #f2f2f2; */
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative; /* Add position relative to .register-container-doctor */
+  z-index: 1; 
+}
+
+.doc-bg-img {
+  flex: 1;
+  height: calc(120vh - 50px); 
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  filter: brightness(90%);
+  background-color: transparent;
+  top: 70px;
+  z-index: 0; 
+}
+.register-container-doctor h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-group-doctor {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group-doctor label {
+  display: none;
+}
+
+.form-group-doctor input,
+.form-group-doctor select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #f2f2f2; /* Set the background color here */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.form-group-doctor input::placeholder,
+.form-group-doctor select::placeholder {
+  color: #6b7280;
+}
+
+.form-group-doctor input:not(:placeholder-shown) + label,
+.form-group-doctor select:not(:placeholder-shown) + label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-weight: bold;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: #f2f2f2;
+  padding: 0 5px;
+}
+
+.form-group-doctor input:not(:placeholder-shown) + label,
+.form-group-doctor select:not(:placeholder-shown) + label,
+.form-group-doctor input:focus + label,
+.form-group-doctor select:focus + label {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 12px;
+  font-weight: normal;
+  color: #6b7280;
+}
+
+.form-group-doctor select {
+  height: 36px;
+}
+
+.button-container-doctor {
+  width: 100%;
+}
+
+.button-container-doctor button[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container-doctor button[type="button"]:hover {
+  background-color: #0056b3;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .ashy {
+    padding-top: 2px; /* Adjust the padding for smaller devices */
+  }
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .form-group-doctor {
+    width: calc(50% - 10px);
+  }
+}
+/* Adjust the styles for smaller devices */
+@media (max-width: 480px) {
+  .form-group-doctor {
+    width: 100%;
+  }
+}

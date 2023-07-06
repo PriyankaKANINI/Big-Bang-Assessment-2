@@ -1,0 +1,98 @@
+.viewdocbyid-con {
+  padding-top: 250px;
+  overflow-y: auto;
+}
+
+.doctor-id-input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#view-id {
+  color: #007bff;
+  margin-top: -10%;
+  margin-bottom: 10%;
+}
+
+.view-id-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-id-button:hover {
+  background-color: #45a049;
+}
+
+.doctor-id-card-container {
+  background-color: #e1f5fe;
+  border: 1px solid #4fc3f7;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.doctor-id-card-container h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.doctor-id-card-container p {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.doctor-id-card-container .doctor-name {
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .doctor-id-input {
+    width: 100%;
+  }
+
+  #view-id {
+    margin-top: 150px; /* Adjust the value to move the search box down */
+    margin-bottom: 20px;
+  }
+
+  .view-id-button {
+    width: 100%;
+  }
+
+  .doctor-id-card-container {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Adjust text above card view */
+  .viewdocbyid-con {
+    padding-top: 20px; /* Adjust the value to move the text down */
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Enable scrolling */
+  .viewdocbyid-con {
+    padding-top: 0;
+    overflow-y: visible;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .viewdocbyid-con {
+    padding-top: 100px;
+  }
+}

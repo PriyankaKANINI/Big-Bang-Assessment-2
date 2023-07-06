@@ -1,0 +1,64 @@
+.title {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.another-container {
+  margin-top: 150px; /* Adjust the top margin based on your needs */
+  max-width: 100%; /* Add a maximum width to make it responsive */
+  padding: 0 20px; /* Add horizontal padding to create space at the sides */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.tableau-container {
+  overflow-x: auto; /* Enable horizontal scroll */
+}
+
+.doctors-table {
+  width: 100%;
+  width: max-content; /* Set width to max-content to allow horizontal overflow */
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; 
+}
+
+.doctors-table th,
+.doctors-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  overflow-x: auto; /* Enable horizontal scroll for each content */
+}
+
+.doctors-table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.doctors-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.doctors-table tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the styles for screens smaller than 768px */
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .doctors-table th,
+  .doctors-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .doctors-table {
+    width: 100%; /* Set the width to 100% to fit the screen */
+    margin-bottom: 20%; /* Add margin-bottom to create space below the table */
+  }
+}

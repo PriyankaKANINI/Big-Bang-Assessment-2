@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BigBang2Project.props" />
+</Project>
